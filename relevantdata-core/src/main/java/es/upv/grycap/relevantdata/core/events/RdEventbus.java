@@ -21,11 +21,10 @@
  * that you distribute must include a readable copy of the "NOTICE" text file.
  */
 
-package org.grycap.relevantdata.core.events;
+package es.upv.grycap.relevantdata.core.events;
 
 import static org.slf4j.LoggerFactory.getLogger;
 
-import org.grycap.relevantdata.core.instance.RdService;
 import org.slf4j.Logger;
 
 import com.hazelcast.config.GroupConfig;
@@ -34,6 +33,8 @@ import com.hazelcast.config.NetworkConfig;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
 import com.typesafe.config.Config;
+
+import es.upv.grycap.relevantdata.core.instance.RdService;
 
 /**
  * Allows publish-subscribe-style communication between components.

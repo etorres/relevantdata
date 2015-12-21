@@ -31,7 +31,7 @@ that you distribute must include a readable copy of the "NOTICE" text file.
 		<encoder>
 			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
 		</encoder>
-	</appender>	
+	</appender>
 
 	<root level="OFF">
 		<appender-ref ref="STDOUT" />

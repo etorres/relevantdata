@@ -21,7 +21,7 @@
  * that you distribute must include a readable copy of the "NOTICE" text file.
  */
 
-package org.grycap.relevantdata.core.instance;
+package es.upv.grycap.relevantdata.core.instance;
 
 import static java.util.Objects.requireNonNull;
 

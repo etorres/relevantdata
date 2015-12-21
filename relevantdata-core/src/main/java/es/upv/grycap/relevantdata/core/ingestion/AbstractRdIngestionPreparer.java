@@ -21,7 +21,7 @@
  * that you distribute must include a readable copy of the "NOTICE" text file.
  */
 
-package org.grycap.relevantdata.core.ingestion;
+package es.upv.grycap.relevantdata.core.ingestion;
 
 /**
  * Base implementation of the {@link RdIngestionPreparer}.

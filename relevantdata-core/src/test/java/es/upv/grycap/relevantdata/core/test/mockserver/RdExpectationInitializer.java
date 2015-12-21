@@ -21,25 +21,23 @@
  * that you distribute must include a readable copy of the "NOTICE" text file.
  */
 
-package org.grycap.relevantdata.core.ingestion;
+package es.upv.grycap.relevantdata.core.test.mockserver;
+
+import org.mockserver.client.server.MockServerClient;
+import org.mockserver.initialize.ExpectationInitializer;
 
 /**
- * Prepares a dataset for ingestion.
+ * Sets Mock Server expectations for tests that requires a valid HTTP/Proxy server to interact with.
  * @author Erik Torres <etserrano@gmail.com>
  * @since 0.0.1
  */
-public interface RdIngestionPreparer {
-	
-	/**
-	 * Gets the name of the target data source.
-	 * @return The name of the target data source.
-	 */
-	String datasource();	
-	
-	/**
-	 * Fetches a group of identifiers from the data source.
-	 * @return A group of identifiers for ingestion.
-	 */
-	Iterable<String> fetchIds();
+public class RdExpectationInitializer implements ExpectationInitializer {
+
+	public static final String MOCK_SERVER_BASE_URL = "http://localhost:9080";
+
+	@Override
+	public void initializeExpectations(final MockServerClient client) {
+		// TODO
+	}
 	
 }

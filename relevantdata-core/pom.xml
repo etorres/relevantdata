@@ -26,7 +26,7 @@ that you distribute must include a readable copy of the "NOTICE" text file.
 	<modelVersion>4.0.0</modelVersion>
 	
 	<parent>
-		<groupId>org.grycap.relevantdata</groupId>
+		<groupId>es.upv.grycap.relevantdata</groupId>
 		<artifactId>relevantdata</artifactId>
 		<version>0.0.1</version>
 	</parent>
@@ -39,15 +39,15 @@ that you distribute must include a readable copy of the "NOTICE" text file.
 	<dependencies>
 		<!-- GRyCAP common utilities -->
 		<dependency>
-			<groupId>org.grycap.coreutils</groupId>
+			<groupId>es.upv.grycap.coreutils</groupId>
 			<artifactId>coreutils-common</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.grycap.coreutils</groupId>
+			<groupId>es.upv.grycap.coreutils</groupId>
 			<artifactId>coreutils-logging</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.grycap.coreutils</groupId>
+			<groupId>es.upv.grycap.coreutils</groupId>
 			<artifactId>coreutils-test</artifactId>
 			<scope>test</scope>
 		</dependency>
@@ -163,7 +163,7 @@ that you distribute must include a readable copy of the "NOTICE" text file.
                 <groupId>org.mock-server</groupId>
                 <artifactId>mockserver-maven-plugin</artifactId>
                 <configuration>
-                	<initializationClass>org.grycap.relevantdata.core.test.mockserver.RdExpectationInitializer</initializationClass>
+                	<initializationClass>es.upv.grycap.relevantdata.core.test.mockserver.RdExpectationInitializer</initializationClass>
                 </configuration>
             </plugin>
 			<!-- Maven Surefire Plugin -->

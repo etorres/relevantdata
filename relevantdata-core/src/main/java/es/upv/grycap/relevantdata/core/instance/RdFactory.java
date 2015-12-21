@@ -21,36 +21,33 @@
  * that you distribute must include a readable copy of the "NOTICE" text file.
  */
 
-package org.grycap.relevantdata.core.ingestion;
+package es.upv.grycap.relevantdata.core.instance;
 
-import static org.slf4j.LoggerFactory.getLogger;
-
-import org.grycap.relevantdata.core.instance.RdService;
-import org.slf4j.Logger;
-
-import com.typesafe.config.Config;
+import javax.annotation.Nullable;
 
 /**
- * Data ingestion service.
+ * RelevantData factory.
  * @author Erik Torres <etserrano@gmail.com>
  * @since 0.0.1
  */
-public class RdDataIngestor extends RdService {
+public final class RdFactory {
 
-	public RdDataIngestor(final Config config) {
-		super(config);
+	/**
+	 * Creates a new instance of RelevantData using the default configuration.
+	 * @return A new instance of RelevantData configured with the default properties.
+	 */
+	public static RdInstance newRelevantdataInstance() {
+		return new RdInstance(null);
 	}
 
-	private static final Logger LOGGER = getLogger(RdDataIngestor.class);
-
-	@Override
-	protected void startUp() throws Exception {
-		LOGGER.info("Startup succeeded.");
+	/**
+	 * Creates a new instance of RelevantData, optionally loading the configuration properties from an external
+	 * configuration file. When no file is provided (<tt>null</tt> value), the default configuration is used.
+	 * @param confname - configuration filename
+	 * @return A new instance of RelevantData configured with the properties loaded from an external configuration file.
+	 */
+	public static RdInstance newRelevantdataInstance(final @Nullable String confname) {
+		return new RdInstance(confname);
 	}
-
-	@Override
-	protected void shutDown() throws Exception {
-		LOGGER.info("Shutdown succeeded.");
-	}
-
+	
 }

@@ -21,7 +21,7 @@
  * that you distribute must include a readable copy of the "NOTICE" text file.
  */
 
-package org.grycap.relevantdata.core.instance;
+package es.upv.grycap.relevantdata.core.instance;
 
 import static com.google.common.base.Preconditions.checkState;
 import static com.typesafe.config.ConfigRenderOptions.concise;
@@ -37,15 +37,16 @@ import java.util.stream.Collectors;
 import javax.annotation.Nullable;
 
 import org.apache.commons.lang3.StringUtils;
-import org.grycap.coreutils.common.Configurer;
-import org.grycap.relevantdata.core.events.RdEventbus;
-import org.grycap.relevantdata.core.ingestion.RdDataIngestor;
 import org.slf4j.Logger;
 
 import com.google.common.util.concurrent.MoreExecutors;
 import com.google.common.util.concurrent.ServiceManager;
 import com.google.common.util.concurrent.ServiceManager.Listener;
 import com.typesafe.config.Config;
+
+import es.upv.grycap.coreutils.common.Configurer;
+import es.upv.grycap.relevantdata.core.events.RdEventbus;
+import es.upv.grycap.relevantdata.core.ingestion.RdDataIngestor;
 
 /**
  * Entry point to RelevantData.

@@ -21,24 +21,25 @@
  * that you distribute must include a readable copy of the "NOTICE" text file.
  */
 
-package org.grycap.relevantdata.core.test;
+package es.upv.grycap.relevantdata.core.test;
 
-import static org.grycap.coreutils.logging.LogManager.getLogManager;
+import static es.upv.grycap.coreutils.logging.LogManager.getLogManager;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.concurrent.TimeUnit;
 
-import org.grycap.coreutils.test.category.FunctionalTests;
-import org.grycap.coreutils.test.rules.TestPrinter;
-import org.grycap.coreutils.test.rules.TestWatcher2;
-import org.grycap.relevantdata.core.instance.RdFactory;
-import org.grycap.relevantdata.core.instance.RdInstance;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.junit.rules.TestRule;
+
+import es.upv.grycap.coreutils.test.category.FunctionalTests;
+import es.upv.grycap.coreutils.test.rules.TestPrinter;
+import es.upv.grycap.coreutils.test.rules.TestWatcher2;
+import es.upv.grycap.relevantdata.core.instance.RdFactory;
+import es.upv.grycap.relevantdata.core.instance.RdInstance;
 
 /**
  * Tests boot process.
