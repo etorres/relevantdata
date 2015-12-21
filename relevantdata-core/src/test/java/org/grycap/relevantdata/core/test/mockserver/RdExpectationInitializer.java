@@ -27,7 +27,7 @@ import org.mockserver.client.server.MockServerClient;
 import org.mockserver.initialize.ExpectationInitializer;
 
 /**
- * Sets Mock Server expectations for fetching tests.
+ * Sets Mock Server expectations for tests that requires a valid HTTP/Proxy server to interact with.
  * @author Erik Torres <etserrano@gmail.com>
  * @since 0.0.1
  */
