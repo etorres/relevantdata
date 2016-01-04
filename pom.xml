@@ -72,7 +72,7 @@ that you distribute must include a readable copy of the "NOTICE" text file.
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		
 		<!-- Convenience properties to set library versions -->
-		<es.upv.grycap.coreutils.version>0.1.0</es.upv.grycap.coreutils.version>
+		<es.upv.grycap.coreutils.version>0.2.0</es.upv.grycap.coreutils.version>
 		<es.upv.grycap.relevantdata.version>${project.version}</es.upv.grycap.relevantdata.version>		
 		<org.mock-server.version>3.10.2</org.mock-server.version>
 		
@@ -112,13 +112,6 @@ that you distribute must include a readable copy of the "NOTICE" text file.
 				<artifactId>commons-io</artifactId>
 				<version>2.4</version>
 			</dependency>
-			
-			<!-- Google Guava core libraries for Java -->
-			<dependency>
-				<groupId>com.google.guava</groupId>
-				<artifactId>guava</artifactId>
-				<version>19.0</version>
-			</dependency>					
 			
 			<!-- Google Gson library -->
 			<dependency>

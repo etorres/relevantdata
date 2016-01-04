@@ -44,7 +44,7 @@ import com.google.common.util.concurrent.ServiceManager;
 import com.google.common.util.concurrent.ServiceManager.Listener;
 import com.typesafe.config.Config;
 
-import es.upv.grycap.coreutils.common.Configurer;
+import es.upv.grycap.coreutils.common.config.Configurer;
 import es.upv.grycap.relevantdata.core.events.RdEventbus;
 import es.upv.grycap.relevantdata.core.ingestion.RdDataIngestor;
 
